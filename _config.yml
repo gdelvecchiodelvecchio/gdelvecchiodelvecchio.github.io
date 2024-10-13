@@ -32,7 +32,7 @@ nav:
     link: "/contact"
 
 # Markdown options
-markdown: kramdown             # Specify markdown processor (default is kramdown)
+markdown: none             # Specify markdown processor (default is kramdown)
 
 # Social links (optional)
 social:
