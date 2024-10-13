@@ -1,0 +1,53 @@
+# Basic site settings
+title: "Giuseppe Del Vecchio Del Vecchio"            # Your name or website's title
+description: "Post-doc research, CV, and Teaching." 
+baseurl: ""                   # Leave this blank for root URL (https://username.github.io/)
+url: "https://gdelvecchiodelvecchio.github.io/giuseppedelvecchiodelvecchio.github.io/"  # Your website URL
+author: "gdelvecchiodelvecchio"           # Your name as the author
+
+# Theme settings
+theme: jekyll-theme-minimal   # Use GitHub's built-in themes like 'minimal', 'cayman', etc.
+
+# Plugins for extra features
+plugins:
+  - jekyll-feed               # Generates RSS feed for blog
+  - jekyll-seo-tag            # SEO tags for better search engine ranking
+  - jekyll-sitemap            # Generate sitemap for search engines
+  - jekyll-paginate           # Paginate blog posts
+
+# Pagination settings
+paginate: 5                   # Number of posts per page in the blog section
+
+# Navigation links (optional, add more as needed)
+nav:
+  - name: "Home"
+    link: "/"
+  - name: "Research"
+    link: "/research"
+  - name: "CV"
+    link: "/cv"
+  - name: "Blog"
+    link: "/blog"
+  - name: "Contact"
+    link: "/contact"
+
+# Markdown options
+markdown: kramdown             # Specify markdown processor (default is kramdown)
+
+# Social links (optional)
+social:
+  twitter: "your_twitter_handle"
+  linkedin: "your_linkedin_profile"
+
+# Exclude files or directories from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Enable Disqus for comments (if using Disqus for the forum)
+disqus:
+  shortname: your_disqus_shortname
+
+# Output configuration
+permalink: /:categories/:title/ # Custom URLs for blog posts
