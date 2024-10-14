@@ -44,7 +44,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-
+  - assets/css/
 # Enable Disqus for comments (if using Disqus for the forum)
 disqus:
   shortname: your_disqus_shortname
