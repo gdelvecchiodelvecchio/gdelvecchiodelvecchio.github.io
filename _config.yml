@@ -21,13 +21,13 @@ paginate: 5                   # Number of posts per page in the blog section
 # Navigation links (optional, add more as needed)
 nav:
   - name: "Home"
-    link: "/"
+    url: "/"
   - name: "Research"
-    link: "/research.html"
+    url: "/research.html"
   - name: "CV"
-    link: "/cv.html"
+    url: "/cv.html"
   - name: "teaching"
-    link: "/teaching.html"
+    url: "/teaching.html"
   
 
 # Markdown options
