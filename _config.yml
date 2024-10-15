@@ -23,13 +23,12 @@ nav:
   - name: "Home"
     link: "/"
   - name: "Research"
-    link: "/research"
+    link: "/"
   - name: "CV"
-    link: "/cv"
-  - name: "Blog"
-    link: "/blog"
-  - name: "Contact"
-    link: "/contact"
+    link: "/"
+  - name: "teaching"
+    link: "/"
+  
 
 # Markdown options
 markdown: none             # Specify markdown processor (default is kramdown)
