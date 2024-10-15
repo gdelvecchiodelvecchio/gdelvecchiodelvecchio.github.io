@@ -23,15 +23,15 @@ nav:
   - name: "Home"
     link: "/"
   - name: "Research"
-    link: "/"
+    link: "/research.html"
   - name: "CV"
-    link: "/"
+    link: "/cv.html"
   - name: "teaching"
-    link: "/"
+    link: "/teaching.html"
   
 
 # Markdown options
-markdown: none             # Specify markdown processor (default is kramdown)
+markdown: kramdown             # Specify markdown processor (default is kramdown)
 
 # Social links (optional)
 social:
@@ -44,9 +44,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - assets/css/
-# Enable Disqus for comments (if using Disqus for the forum)
-disqus:
-  shortname: your_disqus_shortname
 
-# Output configuration
-permalink: /:categories/:title/ # Custom URLs for blog posts
