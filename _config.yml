@@ -1,47 +1,71 @@
-# Basic site settings
-title: "Giuseppe Del Vecchio Del Vecchio"            # Your name or website's title
-description: "Post-doc research, CV, and Teaching." 
-baseurl: ""                   # Leave this blank for root URL (https://username.github.io/)
-url: "https://gdelvecchiodelvecchio.github.io/giuseppedelvecchiodelvecchio.github.io/"  # Your website URL
-author: "gdelvecchiodelvecchio"           # Your name as the author
+# Where things are
+source              : .
+destination         : ./_site
+collections_dir     : .
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+sass:
+  sass_dir: _sass
+collections:
+  posts:
+    output          : true
 
-# Theme settings
-theme: jekyll-theme-minimal   # Use GitHub's built-in themes like 'minimal', 'cayman', etc.
+# Handling Reading
+safe                : false
+include             : [".htaccess"]
+exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files          : [".git", ".svn"]
+encoding            : "utf-8"
+markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter : false
 
-# Plugins for extra features
-plugins:
-  - jekyll-feed               # Generates RSS feed for blog
-  - jekyll-seo-tag            # SEO tags for better search engine ranking
-  - jekyll-sitemap            # Generate sitemap for search engines
-  - jekyll-paginate           # Paginate blog posts
+# Filtering Content
+show_drafts         : null
+limit_posts         : 0
+future              : false
+unpublished         : false
 
-# Pagination settings
-paginate: 5                   # Number of posts per page in the blog section
+# Plugins
+whitelist           : []
+plugins             : []
 
-# Navigation links (optional, add more as needed)
-nav:
-  - name: "Home"
-    url: "/"
-  - name: "Research"
-    url: "/research.html"
-  - name: "CV"
-    url: "/cv.html"
-  - name: "teaching"
-    url: "/teaching.html"
-  
+# Conversion
+markdown            : kramdown
+highlighter         : rouge
+lsi                 : false
+excerpt_separator   : "\n\n"
+incremental         : false
 
-# Markdown options
-markdown: kramdown             # Specify markdown processor (default is kramdown)
+# Serving
+detach              : false
+port                : 4000
+host                : 127.0.0.1
+baseurl             : "" # does not include hostname
+show_dir_listing    : false
 
-# Social links (optional)
-social:
-  twitter: "your_twitter_handle"
-  linkedin: "your_linkedin_profile"
+# Outputting
+permalink           : date
+paginate_path       : /page:num
+timezone            : null
 
-# Exclude files or directories from processing
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - assets/css/
+quiet               : false
+verbose             : false
+defaults            : []
 
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
+
+# Markdown Processors
+kramdown:
+  auto_ids          : true
+  entity_output     : as_char
+  toc_levels        : [1, 2, 3, 4, 5, 6]
+  smart_quotes      : lsquo,rsquo,ldquo,rdquo
+  input             : GFM
+  hard_wrap         : false
+  footnote_nr       : 1
+  show_warnings     : false
