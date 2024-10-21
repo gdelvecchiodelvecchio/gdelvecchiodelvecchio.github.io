@@ -16,8 +16,9 @@ nav ul {
   justify-content: center;
 }
 nav ul li {
-  margin: 0 15px;
-}
+            display: inline;
+            margin: 0 15px;
+        }
 nav ul li a {
   color: white;
   text-decoration: none;
