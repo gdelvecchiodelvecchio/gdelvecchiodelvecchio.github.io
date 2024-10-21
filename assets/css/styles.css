@@ -9,12 +9,6 @@ header {
   padding: 10px 0;
   text-align: center;
 }
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
 nav ul li {
             display: inline;
             margin: 0 15px;
