@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #f1f1f1;
-  background-color: #15152a;
+  background-color: #01013a;
   text-align: justify;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -56,7 +56,18 @@ footer {
   color: #f1f1f1;
   text-align: center;
   padding: 10px;
-  background-color: #15152a;
+  background-color: #01013a;
 }
 
 
+/* A glowing effect container that will hold the gradient */
+#glow-effect {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;  /* Ignore mouse events */
+  background: radial-gradient(circle at center,rgba(96, 92, 139, 0.35), #15152a 20%);
+  transition: background 0.2s ease-out;
+}
