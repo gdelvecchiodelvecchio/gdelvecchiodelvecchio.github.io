@@ -3,7 +3,7 @@ body {
   color: #f1f1f1;
   background-color: #333333;
   margin: 0;
-  padding: 1px;
+  padding: 0;
 }
 
 
@@ -13,22 +13,36 @@ header {
   text-align: center;
 }
 
+ul.main_navigation_bar_list > li {
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: underline;
+}
+
+
 .WelcomeIntroduction {
-  text-align: center;
+  text-align: justify;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-right: 100px;
   padding-left: 100px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-nav ul li a {
-  color: white;
-  text-decoration: underline;
+
+body.cv_body {
+  text-align: justify;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 100px;
+  padding-left: 100px;
+  font-size: 20px;
+  line-height: 30px;
 }
+
+
 
 /*link styles*/
 a {
