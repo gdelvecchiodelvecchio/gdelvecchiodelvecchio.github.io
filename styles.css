@@ -1,25 +1,54 @@
 body {
   font-family: Arial, sans-serif;
+  color: #f1f1f1;
+  background-color: #333333;
   margin: 0;
-  padding: 0;
+  padding: 1px;
 }
+
+
 header {
-  background-color: #333;
+  background-color: #333333;
   color: white;
-  padding: 10px 0;
   text-align: center;
 }
+
+.WelcomeIntroduction {
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
 nav ul li {
             display: inline;
             margin: 0 15px;
         }
 nav ul li a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
+
+/*link styles*/
+a {
+  color: #f0eef3;
+}
+a:visited {
+  color: #f0eef3;
+}
+a:hover {
+  color: #f0eef3;
+}
+a:active {
+  color: #f0eef3;
+}
+
+
 footer {
+  color: #f1f1f1;
   text-align: center;
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #333333;
 }
 
