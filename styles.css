@@ -68,6 +68,6 @@ footer {
   top: 0;
   left: 0;
   pointer-events: none;  /* Ignore mouse events */
-  background: radial-gradient(circle at center,rgba(96, 92, 139, 0.35), #15152a 20%);
+  background: radial-gradient(circle at center,rgba(96, 92, 139, 0.35), #15152a 40%);
   transition: background 0.2s ease-out;
 }
