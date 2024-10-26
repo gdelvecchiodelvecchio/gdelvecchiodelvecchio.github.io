@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 
 
@@ -12,6 +12,8 @@
 <body>
   <canvas id="space" height="132.8px" width="1536px"></canvas>
   <script src="starfield.js"></script>
+  <script src="mouse_glow.js"></script>
+  <div style="display: none;" id="glow-effect"></div>
   <header>
     <h1 style="text-shadow: 1px 1px 4px #b1a9a9;">Giuseppe Del Vecchio Del Vecchio</h1>
     <nav>
@@ -28,21 +30,21 @@
         <p>Location: Paris, France</p>
         <p>Email: <a href="mailto:giuseppe.del-vecchio-del-vecchio@universite-paris-saclay.fr">giuseppe.del-vecchio-del-vecchio@universite-paris-saclay.fr</a></p>
 
-        <h2 class="section-title">Academic Career</h2>
+        <h2 class="section-title">Academic Career</h2>  
         <div class="entry">
-            <p class="entry-title">Post-doctoral scientist</p>
+            <h3 class="entry-title">Post-doctoral scientist</h3>
             <p class="entry-date">2023 - Present</p>
             <p>At <a href="http://www.lptms.universite-paris-saclay.fr/">Laboratoire de Physique Théorique et Modèles Statistiques</a>, Paris.</p>
             <p>Topic: Out-of-equilibrium dynamics of constrained models.<br>Supervisor: <a href="http://www.lptms.universite-paris-saclay.fr/maurizio-fagotti/">Maurizio Fagotti</a>.</p>
         </div>
         <div class="entry">
-            <p class="entry-title">Ph.D. in Applied Mathematics and Theoretical Physics</p>
+            <h3 class="entry-title">Ph.D. in Applied Mathematics and Theoretical Physics</h3>
             <p class="entry-date">2019 - 2023</p>
             <p>At <a href="https://www.kcl.ac.uk/">King's College London</a>, London.</p>
             <p>Thesis: Generalised Hydrodynamics and Correlation Functions.<br>Supervisor: <a href="https://www.kcl.ac.uk/people/benjamin-doyon">Benjamin Doyon</a>.</p>
         </div>
         <div class="entry">
-            <p class="entry-title">B.Sc. + M.Sc.</p>
+            <h3 class="entry-title">B.Sc. + M.Sc.</h3>
             <p class="entry-date">2014 - 2019</p>
             <p>At <a href="https://eng.fisica.unimi.it/ecm/home">Università degli Studi di Milano</a>, Milan.</p>
             <p>Final Grade: 110/110 cum Laude.<br>Thesis: <a href="https://giuseppedelvecchiodelvecchio.files.wordpress.com/2020/03/delvecchiodelvecchio.pdf">Exact Out-of-Equilibrium Dynamics in Classical Integrable Field Theories</a>.<br>Supervisors: <a href="https://people.sissa.it/~mussardo/">Giuseppe Mussardo</a> and <a href="https://pcteserver.mi.infn.it/~caraccio/">Sergio Caracciolo</a>.</p>
@@ -50,32 +52,52 @@
 
         <h2 class="section-title">Jobs and Internships</h2>
         <div class="entry">
-            <p class="entry-title">Graduate Teaching Assistant</p>
+            <h3 class="entry-title">Graduate Teaching Assistant</h3>
             <p class="entry-date">2022 - 2023</p>
             <p>At <a href="https://www.lse.ac.uk/">London School of Economics</a>, London.<br>Course: <a href="https://www.lse.ac.uk/resources/calendar2020-2021/courseGuides/MA/2020_MA212.htm">Further Mathematical Methods</a>.</p>
         </div>
         <div class="entry">
-            <p class="entry-title">Graduate Teaching Assistant</p>
+            <h3 class="entry-title">Graduate Teaching Assistant</h3>
             <p class="entry-date">2019 - 2022</p>
             <p>At <a href="https://www.kcl.ac.uk/">King's College London</a>, London.<br>Courses: Stochastic Analysis, Deep Learning, Numerical Methods, Probability and Statistics, Applied Differential Equations, Statistics in Finance.</p>
         </div>
         <div class="entry">
-            <p class="entry-title">Machine Learning Intern</p>
+            <h3 class="entry-title">Machine Learning Intern</h3>
             <p class="entry-date">2021</p>
             <p>At <a href="https://www.lotus-project.org/about">Lotus Project</a>, London.<br>Development of an unsupervised learning algorithm to identify suitable zones in developing countries for the <a href="https://www.lotus-project.org/analytics-rdm-index">Rural Development Model</a>.</p>
         </div>
-
-        <h2 class="section-title">Computer Skills</h2>
-        <ul class="skills">
-            <li>Julia: 8 years of experience in scientific computing and high performance.</li>
-            <li>Python: 5 years, with knowledge in machine learning (Keras, Scikit-learn), quantum mechanics (QuTiP).</li>
-            <li>Slurm/Torque: Experience in computer clusters for 5+ years.</li>
-            <li>Git, C++, Bash.</li>
-            <li>Techniques: Deep Learning, Quantum Simulation, MonteCarlo, Parallel Computing.</li>
-        </ul>
-
-        <h2 class="section-title">Publications</h2>
+        <div class = "entry">
+          <h2 class="section-title">Computer Skills</h2>
+          <p>
+            Experience in high-performance computing, randomised algorithms, combinatorial optimisation, quantum simulation and machine learning.
+          </p>
+          <div class="div-logo">
+            <a href="https://julialang.org/"><img class="programming-logo" src="assets/img/julia-language-logo-white-border.svg"></a>
+          </div>
+          <div class="div-logo">
+              <a href="https://www.python.org/"><img class="programming-logo" src="assets/img/python-logo-generic.svg"></a>
+          </div>
+          <div class="div-logo">
+              <a href="https://slurm.schedmd.com/"><img class="programming-logo" src="assets/img/Slurm_logo.svg"></a>
+          </div>
+          <div class="div-logo">
+              <a href="https://git-scm.com/"><img class="programming-logo" src="assets/img/Git-Logo-White.svg"></a>
+          </div>
+          <div class="div-logo">
+              <a href="https://github.com/gdelvecchiodelvecchio"><img class="programming-logo" src="assets/img/github-mark-white.svg"></a>
+          </div>
+          <div class="div-logo">
+              <a href="https://www.gnu.org/software/bash/"><img class="programming-logo" src="assets/img/bash_logo_full_colored_light.svg"></a>
+          </div class="div-logo">
+          <div class="div-logo">
+              <a href="https://cplusplus.com/"><img class="programming-logo" src="assets/img/ISO_C++_Logo.svg"></a>
+          </div class="div-logo">
+          <div class="div-logo">
+              <a href="https://www.wolfram.com/mathematica/"><img class="programming-logo" src="assets/img/Mathematica_Logo.svg"></a>
+          </div>
+        </div>
         <div class="entry">
+            <h2 class="section-title">Publications</h2>
             <p><a href="https://arxiv.org/abs/2403.08875">Quantum Fluctuating Theory for One-Dimensional Shock Waves</a>, arXiv 2403.08875.</p>
             <p><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.263401">Exact Large-Scale Fluctuations of the Phase Field in the Sine-Gordon Model</a>, Phys. Rev. Lett. 131, 263401.</p>
             <p><a href="https://scipost.org/SciPostPhysCore.7.1.005">Entanglement Rényi Entropies from Ballistic Fluctuation Theory: The Free Fermionic Case</a>, SciPost Phys. Core 7, 005 (2024).</p>
@@ -84,7 +106,11 @@
             <p><a href="https://scipost.org/10.21468/SciPostPhys.9.1.002">Exact Out-of-Equilibrium Steady States in the Semiclassical Limit of the Interacting Bose Gas</a>, SciPost Phys. 9, 002 (2020).</p>
         </div>
   </main>
-
+  <div class="useful_links">
+    <div class ="div_useful_links">
+      <a href="https://github.com/gdelvecchiodelvecchio"><img class="main_links_img" src="assets/img/github-mark-white.svg"></a>
+    </div>
+  </div>
   <footer>
     <script src="print_date.js"></script>
     <p>&copy; 2024 Giuseppe Del Vecchio Del Vecchio</p>

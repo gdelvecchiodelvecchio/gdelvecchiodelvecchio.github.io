@@ -20,7 +20,7 @@ setInterval(function(){
       converted_date = year + "-" + month + "-" + date;
       break;
     case "YYYY-MMM-DD DDD":
-      converted_date = year + "-" + months[parseInt(month)-1] + "-" + date
+      converted_date = date + "/" + months[parseInt(month)-1] + "/" + year
       + " " + hours + ":" + minutes + ":" + seconds;
       break;
     }
