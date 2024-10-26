@@ -140,11 +140,11 @@ footer {
 
 .div_useful_links {
   position: relative;
-  display: block;
-  left: 50%;
+  display: inline;
+  left: 48%;
   right: 50%;
-  width: 100%;
-  height: 100%x;
+  width: 50px;
+  height: 100%;
 }
 
 .main_links_img {
