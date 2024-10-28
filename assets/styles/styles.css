@@ -1,5 +1,3 @@
-
-
 body {
   font-family: Arial, sans-serif;
   color: #f1f1f1;
@@ -9,17 +7,26 @@ body {
   text-align: justify;
   padding-top: 2%;
   padding-bottom: 5%;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 0%;
+  padding-left: 0%;
   font-size: 25px;
   line-height: 20%;
   overflow-x: hidden;
 }
 
 
-header {
-  color: white;
+
+
+.header_title {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 4px #b1a9a9;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  
 }
 
 .profile_picture {
@@ -27,8 +34,8 @@ header {
   left: 36%;
   top: 10%;
   display: block;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 30%;
+  max-height: 30%;
   border: 5px solid rgb(32, 58, 104);
   border-radius: 30%;
   text-align: justify;
@@ -39,6 +46,8 @@ header {
 .nav_bar {
   position: relative;
   display: block;
+  font-size: 100%;
+  padding-top: 1%;
 }
 
 .main_navigation_bar_list {
@@ -58,6 +67,7 @@ ul.main_navigation_bar_list > li {
   display: inline-block;
   margin-left: 3%;
   margin-top: 2%;
+  font-size: 100%;
   color: white;
   text-decoration: underline;
 }
@@ -65,11 +75,10 @@ ul.main_navigation_bar_list > li {
 
 .main_content {
   text-align: justify;
-  padding-top: 25px;
-  padding-bottom: 1px;
-  padding-right: 100px;
-  padding-left: 100px;
-  font-size: 20px;
+  padding-top: 1.5%;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 100%;
   line-height: 30px;
 }
 
@@ -94,12 +103,13 @@ a:active {
 footer {
   color: #f1f1f1;
   text-align: center;
-  padding: 10px;
+  display: block;
   
 }
 
 
 .hi_button {
+  display: inline-block;
   background-color: rgb(32, 58, 104);
   border: none;
   text-align: center;
@@ -177,20 +187,23 @@ footer {
 }
 
 
-.useful_links{
-  /*border: 3px solid white ;*/
-  display: block;
-  width: 100wv;
-  height: 50px;
+
+.footer_links {
+  position: relative;
+  height: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .div_useful_links {
+  display: inline-block;
   position: relative;
-  display: inline;
-  left: 48%;
-  right: 50%;
-  width: 100%;
-  height: auto;
+  padding: 0;
+  margin-right: 5%;
+
 }
 
 .main_links_img {
