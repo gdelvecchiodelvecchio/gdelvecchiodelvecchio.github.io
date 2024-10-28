@@ -29,13 +29,18 @@ body {
   
 }
 
+.img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+        
+}
+
 .profile_picture {
   position: relative;
-  left: 36%;
-  top: 10%;
   display: block;
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 40%;
+  max-height: 40%;
   border: 5px solid rgb(32, 58, 104);
   border-radius: 30%;
   text-align: justify;
@@ -207,7 +212,7 @@ footer {
 }
 
 .main_links_img {
-  display: block;
+  display: inline-block;
   width: 50px;
   height: 100%;
 }
@@ -215,4 +220,27 @@ footer {
 
 .div_useful_links:hover {
   transform: translateY(-15%);
+}
+
+
+@media only screen and (max-width: 391px) {
+  .header_title {
+    font-size: 130%;
+  }
+  body {
+    font-size: 100%;
+  }
+  .footer_links {
+    font-size: 100%;
+  }
+  footer {
+    font: 100%;
+  }
+  .main_links_img {
+    width: 20%;
+    height: 20%;
+  }
+  .entry {
+    display: inline;
+  }
 }
