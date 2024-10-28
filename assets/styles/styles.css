@@ -223,7 +223,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 391px) {
+@media only screen and (max-width: 500px) {
   .header_title {
     font-size: 130%;
   }
