@@ -126,7 +126,13 @@
         </div>
   </main>
   <footer>
-    <p>&copy; 2024 Giuseppe Del Vecchio Del Vecchio</p>
+    <script>
+      // Get the current year
+      const year = new Date().getFullYear();
+      // Put it into the <span>
+      document.getElementById("year").textContent = year;
+    </script>
+    <p>&copy;  Giuseppe Del Vecchio Del Vecchio</p>
   </p>
   </footer>
 </body>
