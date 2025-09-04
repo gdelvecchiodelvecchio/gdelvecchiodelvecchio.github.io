@@ -10,7 +10,8 @@
 
 
 <body>
-  <canvas id="space" height="132.8px" width="1536px"><script src="starfield.js"></script></canvas>
+  <canvas id="space" height="132.8px" width="1536px"></canvas>
+  <script src="starfield.js"></script>
   
   <div style="display: none;" id="glow-effect"></div>
   <header>
@@ -126,14 +127,11 @@
         </div>
   </main>
   <footer>
+    <p>&copy; <span id="year"></span>  Giuseppe Del Vecchio Del Vecchio</p>
     <script>
-      // Get the current year
-      const year = new Date().getFullYear();
-      // Put it into the <span>
-      document.getElementById("year").textContent = year;
+      // This runs after the <span> exists, so no DOMContentLoaded needed
+      document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    <p>&copy;  Giuseppe Del Vecchio Del Vecchio</p>
-  </p>
   </footer>
 </body>
 

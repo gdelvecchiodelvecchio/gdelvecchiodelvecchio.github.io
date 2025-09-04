@@ -10,7 +10,6 @@
 <body>
   <canvas id="space"></canvas>
   <div style="display: none;" id="glow-effect"></div>
-  
   <script src="starfield.js"></script>
   <header>
     <h1 class="header_title">Giuseppe Del Vecchio Del Vecchio</h1>
@@ -41,8 +40,11 @@
         </div>
   </main>
   <footer>
-    <p>&copy; 2024 Giuseppe Del Vecchio Del Vecchio
-    </p>
+    <p>&copy; <span id="year"></span>  Giuseppe Del Vecchio Del Vecchio</p>
+    <script>
+      // This runs after the <span> exists, so no DOMContentLoaded needed
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>
