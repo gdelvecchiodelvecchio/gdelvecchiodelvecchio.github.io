@@ -10,12 +10,9 @@ body {
   padding-right: 0%;
   padding-left: 0%;
   font-size: 25px;
-  line-height: 20%;
+  line-height: 1.6;   /* improved readability */
   overflow-x: hidden;
 }
-
-
-
 
 .header_title {
   position: relative;
@@ -26,14 +23,12 @@ body {
   text-align: center;
   height: 100%;
   width: 100%;
-  
 }
 
 .img_container {
   display: flex;
   align-items: center;
   justify-content: center;
-        
 }
 
 .profile_picture {
@@ -45,7 +40,6 @@ body {
   border-radius: 30%;
   text-align: justify;
   align-items: center;
-  
 }
 
 .nav_bar {
@@ -64,10 +58,9 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
-/* only matches <li> that are nested inside .main_nabigation>bar_list*/
+/* only matches <li> that are nested inside .main_navigation_bar_list */
 ul.main_navigation_bar_list > li {
   display: inline-block;
   margin-left: 3%;
@@ -76,7 +69,6 @@ ul.main_navigation_bar_list > li {
   color: white;
   text-decoration: underline;
 }
-
 
 .main_content {
   text-align: justify;
@@ -87,31 +79,31 @@ ul.main_navigation_bar_list > li {
   line-height: 30px;
 }
 
-
-
-/*link styles*/
-a {
-  color: #f0eef3;
-  background: url("/assets/img/link_image.jpg");
-}
+/* Link styles */
+a,
+a:link,
 a:visited {
-  color: #f0eef3;
-}
-a:hover {
-  color: #4975e4;
-}
-a:active {
-  color: #f0eef3;
+  color: #f1f1f1;          /* unified with body text */
+  background: none;        /* remove background image */
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
+a:hover,
+a:focus-visible {
+  color: #4975e4;          /* hover/focus color */
+  text-decoration-thickness: 2px;
+}
+
+a:active {
+  color: #f1f1f1;
+}
 
 footer {
   color: #f1f1f1;
   text-align: center;
   display: block;
-  
 }
-
 
 .hi_button {
   display: inline-block;
@@ -134,8 +126,6 @@ footer {
   transition: background 0.2s ease-out;
 }
 
-
-
 #space {
   position: fixed;
   display: block;
@@ -149,12 +139,10 @@ footer {
   z-index: 10000;
 }
 
-/*Animated buttons for cv entries*/
-
+/* Animated buttons for cv entries */
 .entry {
   border: 2px hidden;
   display: block;
-  
   margin: 3px;
   padding-left: 20px;
   padding-right: 20px;
@@ -168,7 +156,6 @@ footer {
 .entry:hover {
   background-color: rgb(47, 67, 100);
 }
-
 
 .div-logo {
   display: inline-block;
@@ -184,14 +171,11 @@ footer {
   position: relative;
   display: inline;
   text-align: center;
-
 }
 
 .div-logo:hover {
   transform: translateY(-15%);
 }
-
-
 
 .footer_links {
   position: relative;
@@ -208,7 +192,6 @@ footer {
   position: relative;
   padding: 0;
   margin-right: 5%;
-
 }
 
 .main_links_img {
@@ -217,12 +200,11 @@ footer {
   height: 100%;
 }
 
-
 .div_useful_links:hover {
   transform: translateY(-15%);
 }
 
-/*set up for smaller screens*/
+/* set up for smaller screens */
 @media only screen and (max-width: 500px) {
   .header_title {
     font-size: 130%;
